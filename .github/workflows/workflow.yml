@@ -19,4 +19,5 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish
               run: npm publish --access public
-              
+              env:
+                  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
